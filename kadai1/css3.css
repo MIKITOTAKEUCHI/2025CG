@@ -3,17 +3,14 @@ body{
     margin: 0;
     padding: 0;
 }
-
-/* サイト全体の枠（中央に固定・最大幅を決める） */
 .wrap{
     background-color: #FFFFFF;
-    width: 100%;     /* ★ここで「最大の横幅」を決める */
-    margin: 0 auto;         /* ★画面の真ん中に配置 */
+    width: 100%;     
+    margin: 0 auto;         
     position: relative;
     overflow: hidden;
 }
 
-/* 中身の大枠 */
 #bigbox {
     width: 100%;
 	overflow: hidden;
@@ -35,16 +32,16 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);  /* ど真ん中 */
+    transform: translate(-50%, -50%);  
 
     background: rgba(255, 255, 255, 0.65);
-    padding: 30px 80px;    /* ← 長方形の大きさはここで調整 */
+    padding: 30px 80px;  
     border-radius: 10px;
-    font-size: 60px;       /* 文字サイズ */
+    font-size: 60px;       
     font-style: italic;
     font-weight: bold;
     text-align: center;
-    white-space: nowrap;   /* 1行に収めたいなら */
+    white-space: nowrap;   
 }
 
 
@@ -68,7 +65,7 @@ body{
 
 }
 
-/* ロゴ */
+
 #navbar .logo img{
     height: 180px;
     width: auto;
@@ -85,12 +82,12 @@ ul.menu{
     gap: 20px;                  
 }
 
-/* メイン項目の箱 */
+
 ul.menu > li{
     position: relative;         
 }
 
-/* メイン項目の文字 */
+
 ul.menu > li > a{
     min-width: 90px;            
     height: 40px;               
@@ -102,10 +99,10 @@ ul.menu > li > a{
     color: #fff;
     font-weight: bold;
     text-decoration: none;
-    white-space: nowrap;        /* 改行させない */
+    white-space: nowrap;       
 }
 
-/* ▼ サブメニュー（FOOD / DRINK） */
+
 ul.menu li ul{
     position: absolute;
     top: 100%;                  
@@ -119,7 +116,7 @@ ul.menu li ul{
     display: none;              
 }
 
-/* サブメニュー内の li */
+
 ul.menu li ul li a{
     min-width: 90px;
     height: 40px;
@@ -140,30 +137,30 @@ ul.menu li ul li a:hover{
     color: #fff;
 }
 
-/* MENU にカーソルを乗せたらサブメニュー表示 */
+
 ul.menu li:hover ul{
     display: block;
 }
 
-/* 全体：3つ横並び */
+
 .three {
   display: flex;
   justify-content: space-between;
   gap: 40px;
   padding: 30px 60px;
 
-  /* レイアウト崩れ防止（重要）*/
+  
   min-width: 1100px;
 }
 
-/* カード1つ */
+
 .card {
   width: 33.3%;
   display: flex;
   flex-direction: column;
 }
 
-/* 画像ブロック */
+
 .card-img {
   width: 100%;
   overflow: hidden;
@@ -176,16 +173,17 @@ ul.menu li:hover ul{
   object-fit: cover;
 }
 
-/* タイトル */
+
 .card-title {
   font-size: 20px;
   font-weight: bold;
   margin: 20px 0 10px;
 }
 
-/* テキスト */
+
 .card-text {
   font-size: 14px;
   line-height: 1.9;
 }
+
 
