@@ -1,19 +1,19 @@
-/* 全体の土台 */
+
 body{
     margin: 0;
     padding: 0;
 }
 
-/* サイト全体の枠（中央に固定・最大幅を決める） */
+
 .wrap{
     background-color: #FFFFFF;
-    width: 100%;     /* ★ここで「最大の横幅」を決める */
-    margin: 0 auto;         /* ★画面の真ん中に配置 */
+    width: 100%;     
+    margin: 0 auto;         
     position: relative;
     overflow: hidden;
 }
 
-/* 中身の大枠 */
+
 #bigbox {
     width: 100%;
 	margin: 0;
@@ -48,7 +48,7 @@ body{
     background: rgba(0, 0, 0, 0.60);
 }
 
-/* ロゴ */
+
 #navbar .logo img{
     height: 180px;
     width: auto;
@@ -65,12 +65,12 @@ ul.menu{
     gap: 20px;                  
 }
 
-/* メイン項目の箱 */
+
 ul.menu > li{
     position: relative;         
 }
 
-/* メイン項目の文字 */
+
 ul.menu > li > a{
     min-width: 90px;            
     height: 40px;               
@@ -82,10 +82,10 @@ ul.menu > li > a{
     color: #fff;
     font-weight: bold;
     text-decoration: none;
-    white-space: nowrap;        /* 改行させない */
+    white-space: nowrap;        
 }
 
-/* ▼ サブメニュー（FOOD / DRINK） */
+
 ul.menu li ul{
     position: absolute;
     top: 100%;                  
@@ -99,7 +99,7 @@ ul.menu li ul{
     display: none;              
 }
 
-/* サブメニュー内の li */
+
 ul.menu li ul li a{
     min-width: 90px;
     height: 40px;
@@ -120,17 +120,17 @@ ul.menu li ul li a:hover{
     color: #fff;
 }
 
-/* MENU にカーソルを乗せたらサブメニュー表示 */
+
 ul.menu li:hover ul{
     display: block;
 }
 
 #three {
     width: 100%;
-    height: 100%;          /* 画面の高さいっぱいにする */
+    height: 100%;         
     display: flex;
-    justify-content: center; /* 左右中央 */
-    align-items: center;     /* 上下中央 */
+    justify-content: center; 
+    align-items: center;     
     text-align: center;
     font-size: 15px;
     line-height: 4.0;
@@ -146,14 +146,14 @@ html {
 }
 
 
-/* CONTACT 全体 */
+
 #five {
   padding: 60px 10%;
   background: #ffffff;
   scroll-margin-top: 150px;
 }
 
-/* CONTACT のタイトル */
+
 #five .contact-title {
   text-align: center;
   font-size: 32px;
@@ -161,7 +161,7 @@ html {
   margin-bottom: 40px;
 }
 
-/* 中身の枠 */
+
 .contact-box {
   max-width: 800px;
   margin: 0 auto;
@@ -170,36 +170,37 @@ html {
   border-bottom: 1px solid #000;
 }
 
-/* 1行（ADDRESS 行・PHONE 行…） */
+
 .contact-row {
   display: flex;
   align-items: flex-start;
   margin-bottom: 60px;
 }
 
-/* 左側ラベル（ADDRESS / PHONE / DINNER） */
+
 .contact-label {
-  width: 120px;              /* ラベルの幅を固定して揃える */
+  width: 120px;             
   font-size: 14px;
   letter-spacing: 0.25em;
   font-weight: bold;
 }
 
-/* 右側の内容 */
+
 .contact-content p {
   margin: 0;
 }
 
-/* 店名を太く大きく */
+
 .shop-name {
   font-size: 18px;
   font-weight: bold;
 }
 
-/* 電話番号をドーンと大きく */
+
 .phone {
   font-size: 25px;
   font-weight: bold;
 }
+
 
 
