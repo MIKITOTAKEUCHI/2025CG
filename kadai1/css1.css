@@ -3,8 +3,6 @@ body{
     margin: 0;
     padding: 0;
 }
-
-
 .wrap{
     background-color: #FFFFFF;
     width: 100%;     
@@ -12,24 +10,18 @@ body{
     position: relative;
     overflow: hidden;
 }
-
-
 #bigbox {
     width: 100%;
 	margin: 0;
     padding: 0;
     position: relative;  
 }
-
 #one img,#two img,#four img{
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
 }
-
-
-
 #navbar{
     width: 100%;
     height: 150px;
@@ -37,55 +29,39 @@ body{
     top: 0;
     left: 0;
     z-index: 9999;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 0 40px;
     box-sizing: border-box;
-
     background: rgba(0, 0, 0, 0.60);
 }
-
-
 #navbar .logo img{
     height: 180px;
     width: auto;
 }
-
-
 ul.menu{
     margin: 0;
     padding: 0;
     list-style: none;
-
     display: flex;              
     align-items: center;
     gap: 20px;                  
 }
-
-
 ul.menu > li{
     position: relative;         
 }
-
-
 ul.menu > li > a{
     min-width: 90px;            
     height: 40px;               
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     color: #fff;
     font-weight: bold;
     text-decoration: none;
     white-space: nowrap;        
 }
-
-
 ul.menu li ul{
     position: absolute;
     top: 100%;                  
@@ -94,37 +70,27 @@ ul.menu li ul{
     margin: 0;
     padding: 0;
     list-style: none;
-
     background: rgba(0, 0, 0, 0.9);
     display: none;              
 }
-
-
 ul.menu li ul li a{
     min-width: 90px;
     height: 40px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     color: #fff;
     text-decoration: none;
     white-space: nowrap;
 }
-
-
 ul.menu > li > a:hover,
 ul.menu li ul li a:hover{
     background: rgba(0, 0, 0, 0.9);
     color: #fff;
 }
-
-
 ul.menu li:hover ul{
     display: block;
 }
-
 #three {
     width: 100%;
     height: 100%;         
@@ -144,24 +110,17 @@ ul.menu li:hover ul{
 html {
   scroll-behavior: smooth;
 }
-
-
-
 #five {
   padding: 60px 10%;
   background: #ffffff;
   scroll-margin-top: 150px;
 }
-
-
 #five .contact-title {
   text-align: center;
   font-size: 32px;
   letter-spacing: 0.2em;
   margin-bottom: 40px;
 }
-
-
 .contact-box {
   max-width: 800px;
   margin: 0 auto;
@@ -169,38 +128,25 @@ html {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
-
-
 .contact-row {
   display: flex;
   align-items: flex-start;
   margin-bottom: 60px;
 }
-
-
 .contact-label {
   width: 120px;             
   font-size: 14px;
   letter-spacing: 0.25em;
   font-weight: bold;
 }
-
-
 .contact-content p {
   margin: 0;
 }
-
-
 .shop-name {
   font-size: 18px;
   font-weight: bold;
 }
-
-
 .phone {
   font-size: 25px;
   font-weight: bold;
 }
-
-
-
