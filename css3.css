@@ -1,0 +1,191 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* サイト全体の枠（中央に固定・最大幅を決める） */
+.wrap{
+    background-color: #FFFFFF;
+    width: 100%;     /* ★ここで「最大の横幅」を決める */
+    margin: 0 auto;         /* ★画面の真ん中に配置 */
+    position: relative;
+    overflow: hidden;
+}
+
+/* 中身の大枠 */
+#bigbox {
+    width: 100%;
+	overflow: hidden;
+	margin: 0;
+    padding: 0;
+    position: relative;  
+}
+#one {
+    position: relative;
+}
+#one img{
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+#two {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  /* ど真ん中 */
+
+    background: rgba(255, 255, 255, 0.65);
+    padding: 30px 80px;    /* ← 長方形の大きさはここで調整 */
+    border-radius: 10px;
+    font-size: 60px;       /* 文字サイズ */
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;   /* 1行に収めたいなら */
+}
+
+
+
+#navbar{
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 40px;
+    box-sizing: border-box;
+
+    background: rgba(0, 0, 0, 0.60);
+
+}
+
+/* ロゴ */
+#navbar .logo img{
+    height: 180px;
+    width: auto;
+}
+
+
+ul.menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;              
+    align-items: center;
+    gap: 20px;                  
+}
+
+/* メイン項目の箱 */
+ul.menu > li{
+    position: relative;         
+}
+
+/* メイン項目の文字 */
+ul.menu > li > a{
+    min-width: 90px;            
+    height: 40px;               
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;        /* 改行させない */
+}
+
+/* ▼ サブメニュー（FOOD / DRINK） */
+ul.menu li ul{
+    position: absolute;
+    top: 100%;                  
+    left: 0;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    background: rgba(0, 0, 0, 0.9);
+    display: none;              
+}
+
+/* サブメニュー内の li */
+ul.menu li ul li a{
+    min-width: 90px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+ul.menu > li > a:hover,
+ul.menu li ul li a:hover{
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+}
+
+/* MENU にカーソルを乗せたらサブメニュー表示 */
+ul.menu li:hover ul{
+    display: block;
+}
+
+/* 全体：3つ横並び */
+.three {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 30px 60px;
+
+  /* レイアウト崩れ防止（重要）*/
+  min-width: 1100px;
+}
+
+/* カード1つ */
+.card {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 画像ブロック */
+.card-img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.card-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* タイトル */
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+}
+
+/* テキスト */
+.card-text {
+  font-size: 14px;
+  line-height: 1.9;
+}
+
