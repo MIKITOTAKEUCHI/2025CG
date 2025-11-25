@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScriptを使った簡単な電卓</title>
+
+	<script>
+ 	function tasu() {
+		var v1 = document.getElementById("a").value;
+		var v2 = document.getElementById("b").value;
+		var ans = Number(v1) + Number(v2);
+		alert("答えは＝" + ans);
+ 	}
+	
+	function hiku(){
+		var v1 = document.getElementById("a").value;
+		var v2 = document.getElementById("b").value;
+		var ans = Number(v1) - Number(v2);
+		alert("答えは＝" + ans);
+	}
+
+	function kakeru(){
+		var v1 = document.getElementById("a").value;
+		var v2 = document.getElementById("b").value;
+		var ans = Number(v1) * Number(v2);
+		alert("答えは＝" + ans);
+	}
+
+	function waru(){
+		var v1 = document.getElementById("a").value;
+		var v2 = document.getElementById("b").value;
+
+		if (Number(v2) === 0) {
+			alert("エラー：0で割れません");
+		}else{
+			var ans = Number(v1) / Number(v2);
+			alert("答えは＝" + ans);
+		}
+	}
+	</script>
+</head>
+
+<body>
+<h1>２つの数の計算</h1>
+
+A= <input type="text" id="a" /><br>
+B= <input type="text" id="b" /><br>
+
+<input type="button" onclick="tasu()" value="足し算" />
+<input type="button" onclick="hiku()" value="引き算" /> 
+<input type="button" onclick="kakeru()" value="かけ算" /> 
+<input type="button" onclick="waru()" value="割り算" /> 
+
+</body>
+</html>
